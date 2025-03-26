@@ -1,0 +1,45 @@
+body {
+    background-image: url(../../images/Login/fondo.webp);
+    background-size: cover;
+}
+
+.bauto {
+    font-style: italic;
+    color: black;
+    font-size: xx-large;
+    margin: 0;
+    font-family: "swissbt", sans-serif;
+}
+
+.form-group {
+    margin: 2rem auto;
+}
+
+.form-group label {
+    margin: 0.5rem auto;
+}
+
+.form-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.form-buttons p{
+    color: #F5F5F5;
+}
+
+.card{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-body {   
+    --bs-card-spacer-y: 2rem;
+    --bs-card-spacer-x: 2rem;
+}
+
+form, .card-header h3 {
+    margin-top: 1rem;
+    color: #F5F5F5;
+}

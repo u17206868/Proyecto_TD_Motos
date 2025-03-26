@@ -1,0 +1,130 @@
+/* Media Queries para Noticias */
+
+/* Para pantallas extra grandes */
+@media (min-width: 2560px) {
+    .carousel-item img {
+        max-height: 600px;
+    }
+
+    .card-img-top {
+        height: 300px;
+    }
+
+    .news-category {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+/* Para pantallas grandes */
+@media (min-width: 1200px) and (max-width: 2559px) {
+    .carousel-item img {
+        max-height: 500px;
+    }
+
+    .card-img-top {
+        height: 250px;
+    }
+
+    .news-category {
+        font-size: 0.9rem;
+    }
+}
+
+/* Para pantallas medianas */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .carousel-item img {
+        max-height: 400px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+
+    .news-category {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .highlight-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+    .carousel-item img {
+        max-height: 300px;
+    }
+
+    .card-img-top {
+        height: auto;
+    }
+
+    .news-category {
+        font-size: 0.8rem;
+        padding: 5px 8px;
+    }
+
+    .carousel-caption {
+        font-size: 0.9rem;
+    }
+
+    .highlight-title {
+        font-size: 1rem;
+        padding: 2px 8px;
+    }
+
+    .noti-contain {
+        flex-direction: column;
+        gap: 30px;
+
+        & > div {
+            width: 100%;
+        }
+    }
+
+    .share-net {
+        width: 80px;
+        height: 40px;
+        bottom: -40px;
+
+        i {
+            font-size: 23px;
+        }
+    }
+
+    .col-md-4 {
+        width: 100%; /* Una tarjeta por fila */
+        margin-bottom: 20px;
+    }
+}
+
+/* Para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .carousel-item img {
+        max-height: 250px;
+    }
+
+    .card-img-top {
+        height: auto; /* Ajusta automáticamente según el contenido */
+    }
+
+    .news-category {
+        font-size: 0.7rem;
+        padding: 4px 6px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+
+    .carousel-caption {
+        font-size: 0.8rem;
+    }
+}

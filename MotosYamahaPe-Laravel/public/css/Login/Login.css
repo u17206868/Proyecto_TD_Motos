@@ -1,0 +1,97 @@
+/* Fondo general */
+body {
+    background-image: url("../../images/Login/fondo.webp");
+    background-size: cover;
+    background-color: #f8f9fa;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Contenedor principal */
+.login-container {
+    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Tarjeta de formulario */
+.login-box {
+    width: 450px; /* Ajustar ancho */
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo con opacidad */
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: bold;
+    color: #007bff; /* Azul intenso */
+    font-size: 2rem; /* Incremento en el tamaño */
+    margin-bottom: 1.5rem;
+}
+
+/* Botón de inicio de sesión */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+    box-shadow: 0px 4px 15px rgba(0, 91, 187, 0.5);
+}
+
+/* Inputs */
+.form-control {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1.3rem; /* Ajustar tamaño */
+    padding: 1rem; /* Incrementar espacio interno */
+    height: 50px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Texto de pie */
+p {
+    color: #333;
+    font-size: 1.1rem; /* Incrementar tamaño del texto */
+}
+
+p a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Alertas */
+.alert {
+    font-size: 1rem; /* Ajustar tamaño de texto */
+    padding: 0.9rem;
+    border-radius: 10px;
+}
+
+.alert-danger {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #d9534f;
+}
+
+.alert-success {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+}

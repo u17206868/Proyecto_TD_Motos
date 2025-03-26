@@ -1,0 +1,108 @@
+/* Para pantallas muy pequeñas (móviles pequeños y dispositivos menores a 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        padding: 1rem; /* Reducir el padding general */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reducir tamaño del título principal */
+    }
+
+    h5 {
+        font-size: 1rem; /* Reducir el tamaño de los subtítulos */
+        margin-top: 1.5rem; /* Reducir separación superior */
+    }
+
+    p {
+        font-size: 0.875rem; /* Reducir el tamaño del texto */
+        line-height: 1.5; /* Mejorar la legibilidad */
+        text-align: left; /* Alinear texto para pantallas pequeñas */
+    }
+
+    hr {
+        margin-top: 2rem;
+    }
+
+    .text-center small {
+        font-size: 0.75rem; /* Reducir tamaño del texto del footer */
+    }
+}
+
+/* Para pantallas pequeñas (entre 576px y 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 1.8rem; /* Ajustar el tamaño del título principal */
+    }
+
+    h5 {
+        font-size: 1.1rem; /* Subtítulos ligeramente más grandes */
+        margin-top: 2rem; /* Espaciado adecuado */
+    }
+
+    p {
+        font-size: 0.9rem; /* Ajustar texto para pantallas pequeñas */
+        text-align: justify; /* Mantener justificación */
+    }
+}
+
+/* Para pantallas medianas (entre 768px y 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 2rem; /* Aumentar el tamaño del título */
+    }
+
+    h5 {
+        font-size: 1.2rem; /* Ajustar subtítulos */
+    }
+
+    p {
+        font-size: 1rem; /* Texto más legible en pantallas medianas */
+    }
+
+    .text-center small {
+        font-size: 0.85rem; /* Footer más destacado */
+    }
+}
+
+/* Para pantallas grandes (entre 992px y 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 2.2rem; /* Título prominente */
+    }
+
+    h5 {
+        font-size: 1.3rem; /* Subtítulos más grandes */
+    }
+
+    p {
+        font-size: 1.1rem; /* Texto ligeramente más grande */
+    }
+
+    hr {
+        margin-top: 3rem; /* Separación mayor para secciones */
+    }
+}
+
+/* Para pantallas extra grandes (1200px y más) */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2.5rem; /* Título más grande en pantallas grandes */
+    }
+
+    h5 {
+        font-size: 1.4rem; /* Subtítulos destacados */
+    }
+
+    p {
+        font-size: 1.2rem; /* Texto más grande y legible */
+        line-height: 1.8; /* Mejorar legibilidad en pantallas amplias */
+    }
+
+    hr {
+        margin-top: 4rem; /* Mayor separación entre secciones */
+    }
+
+    .text-center small {
+        font-size: 0.9rem; /* Footer con tamaño adecuado */
+    }
+}

@@ -1,0 +1,540 @@
+/* Carrusel */
+.custom-carousel {
+    max-width: 85%;
+    margin: 20px auto; /* Espaciado general */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding-top: 15px; /* Espaciado superior para separación */
+    background-color: white; /* Fondo blanco */
+}
+
+.carousel-inner {
+    border-radius: 15px;
+}
+
+.slider-img {
+    width: 100%;
+    height: 450px; /* Todas las imágenes tienen la misma altura */
+    object-fit: cover; /* Asegurar que las imágenes llenen el espacio */
+    border-radius: 0 0 15px 15px; /* Bordes redondeados solo en la parte inferior */
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px; /* Más cercano al borde inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 60%;
+    text-align: center;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.carousel-caption .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #0056b3;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #007bff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+/*Filtrador*/
+
+.fondo {
+    background-image: url(../../images/fondo.webp);
+    width: 100%;
+    height: 550px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0%;
+}
+
+.overlay {
+    width: 100%;
+    height: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paralelogramo {
+    position: relative;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px !important;
+    animation-name: slide;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+
+/*Buscador*/
+
+#hero {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.bauto {
+    font-family: "Calibri", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    color: orange;
+    background-color: white;
+    border: 2px solid orange;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+.btn-custom:hover {
+    background-color: #ffc107;
+    color: white;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.icon-tipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.nav-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    transition: box-shadow 0.2s;
+
+    &:hover {
+        box-shadow: 0 0 10px #aaa;
+    }
+}
+
+.nav-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.suv-text {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #b3b3b3;
+    transition: color 0.3s;
+}
+
+.icon-tipo:hover .suv-text {
+    color: #000;
+}
+
+/* Destacados */
+
+.btn-pagina {
+    padding: 8px 18px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-pagina:hover {
+    background-color: #0056b3;
+}
+
+.card-img-top {
+    height: 200px;
+}
+
+.card-title-wrapper {
+    margin-bottom: 10px;
+}
+
+.card-price-wrapper {
+    margin-top: 10px;
+}
+
+.bauto {
+    font-style: italic;
+    color: black;
+    font-size: xx-large;
+    margin: 0;
+    font-family: "swissbt", sans-serif;
+}
+
+.featured-car-card {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    z-index: 5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.featured-car .title-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px 15px;
+    margin-bottom: 30px;
+}
+
+.featured-car-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: hsl(219, 21%, 39%);
+    font-size: 0.875rem;
+}
+
+.featured-car-link span {
+    transition: 0.5s ease;
+}
+
+.featured-car-link:is(:hover, :focus) span {
+    color: hsl(240, 22%, 25%);
+}
+
+.featured-car-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado entre tarjetas */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+.featured-car-card .card-banner {
+    background: hsla(0, 0%, 0%, 0.2);
+    aspect-ratio: 3 / 2;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.featured-car-card .card-banner > img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-car-card .card-content {
+    padding: 10px;
+}
+
+.featured-car-card .card-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.featured-car-card .card-title {
+    width: calc(100% - 60px);
+}
+
+.featured-car-card .card-title > a {
+    color: inherit;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.featured-car-card .card-title > a:is(:hover, :focus) {
+    color: hsl(204, 91%, 53%);
+}
+
+.featured-car-card .year {
+    font-family: "Nunito", sans-serif;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border-radius: 14px;
+}
+
+.featured-car-card .card-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+    margin-bottom: 15px;
+    list-style-type: none;
+}
+
+.featured-car-card .card-list-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.featured-car-card .card-item-text {
+    color: hsl(219, 21%, 39%);
+    font-size: 0.875rem;
+}
+
+.featured-car-card .card-price-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.featured-car-card .card-price {
+    font-family: "Nunito", sans-serif;
+    font-size: 0.875rem;
+    color: hsl(240, 22%, 25%);
+}
+
+.featured-car-card .card-price strong {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.featured-car-card .btn {
+    border: 1px solid white;
+    color: #fff;
+    margin: 10% auto;
+    background: #343a40;
+}
+
+.featured-car-card .btn:hover {
+    background: hsl(41, 98%, 51%);
+    /* color: rgb(255, 136, 0); */
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid orange;
+    text-decoration: none;
+}
+
+.featured-car-card .btn:last-child {
+    --height: 36px;
+    min-width: 100%;
+}
+
+.featured-car-item {
+    flex: 1 1 calc(25% - 20px); /* Ajusta el ancho de las tarjetas (4 por fila) */
+    max-width: calc(25% - 20px);
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.featured-car-card:hover {
+    transform: scale(1.05);
+}
+
+.label {
+    position: absolute;
+    width: 74px;
+    padding: 6px 50px 6px 13px;
+    color: #fff;
+    margin: 5px 0;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #ff0000;
+    text-shadow: 0 1px 2px #bbb;
+    border-top-left-radius: 10px;
+    left: -20px;
+    z-index: 999;
+}
+
+.label:before,
+.label:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.label:after {
+    left: 0;
+    top: 100%;
+    border-width: 5px 10px;
+    border-style: solid;
+    border-color: #2d7b6b #2d7b6b transparent transparent;
+}
+
+.Ubicacion {
+    position: relative;
+    border-radius: 15px;
+    background-color: #1f77dc1a;
+    font-size: 12px;
+    color: #3276c5c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Ubicacion svg {
+    margin-right: 8px;
+    fill: #3276c5c4;
+}
+
+/*Ultimas Noticias */
+
+.section.blog {
+    padding: 2rem 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.h2.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.blog-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #e0e0e0;
+}
+
+/* For WebKit-based browsers */
+.blog-list::-webkit-scrollbar {
+    height: 8px;
+}
+
+.blog-list::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.blog-list::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+}
+
+.blog-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-banner img {
+    object-fit: cover;
+    height: 200px; /* Ajusta el tamaño de las imágenes */
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+.search-container {
+    width: 100%;
+}
+
+@keyframes slide {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}

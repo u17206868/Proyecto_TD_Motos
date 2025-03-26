@@ -1,0 +1,95 @@
+/* Media Queries para el diseño */
+
+/* Para pantallas extra grandes */
+@media (min-width: 2560px) {
+    .card-img-top {
+        height: 300px;
+    }
+
+    .container {
+        max-width: 1440px;
+    }
+}
+
+/* Para pantallas grandes */
+@media (min-width: 1200px) and (max-width: 2559px) {
+    .card-img-top {
+        height: 250px;
+    }
+
+    .container {
+        max-width: 1140px;
+    }
+
+    .accordion-button {
+        font-size: 1.1rem;
+    }
+}
+
+/* Para pantallas medianas */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .card-img-top {
+        height: 200px;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 767px) {
+    .card-img-top {
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .accordion-button {
+        font-size: 0.9rem;
+    }
+
+    .col-md-4 {
+        width: 100%; /* Cada columna ocupará toda la fila */
+        margin-bottom: 20px; /* Agrega espacio entre filas */
+    }
+
+    .modal-dialog {
+        width: 90%; /* Reduce el ancho del modal */
+    }
+}
+
+/* Para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .card-img-top {
+        height: auto; /* Ajusta las imágenes al contenido */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.85rem;
+        padding: 10px 15px;
+    }
+
+    .modal-dialog {
+        width: 100%; /* Ancho completo del modal */
+        margin: 0 auto;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+}

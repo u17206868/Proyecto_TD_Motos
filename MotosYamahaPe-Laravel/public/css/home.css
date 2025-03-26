@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400;700&display=swap");
+
+body {
+    min-width: 466px;
+}
+
+.navbar {
+    background-color: black;
+}
+
+* {
+    font-family: "Poppins";
+    font-size: 14px;
+}
+
+.collapse {
+    width: 50px;
+}
+
+.fondo {
+    width: 100%;
+    background-image: url(../images/fondo.webp);
+    object-fit: contain;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0%;
+}
+
+/* paralelogramo */
+
+.paralelogramo {
+    width: 60%;
+    margin-top: 150px;
+    background-color: rgb(0, 0, 0, 0.7);
+    background-position: center;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.paralelo__nav {
+    font-size: 12px;
+}
+
+.destacados-img > a > img {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+.form__search-desk {
+    display: flex;
+}
+
+.bauto {
+    font-style: italic;
+    color: black;
+    font-size: xx-large;
+}
+.images-footer > a > img {
+    width: 80px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.images-footer {
+    background-color: rgb(43, 46, 48);
+}
+.text {
+    font-style: normal;
+    color: white;
+    font-size: medium;
+    text-align: auto;
+}
+.utext {
+    font-style: italic;
+    color: white;
+    font: bold;
+}
+
+.btn-vender {
+    background-color: rgb(210 145 49);
+    color: grey;
+    border: 0;
+    border-radius: 10px;
+    padding: 8px 16px;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-tipo {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.icon-tipo a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #818181;
+}
+
+.icon-tipo img {
+    width: 50px;
+    height: 50px;
+}
+
+.cont-icon-sigueme {
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-pago {
+    border-radius: 11px;
+    margin: 10px;
+}
+
+.card-img-top {
+    height: 200px;
+}
+
+.popup {
+    background-color: rgb(0.38, 0.38, 0.38, 0.5);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+}
+
+.container-popup {
+    padding: 30px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 30px;
+    position: relative;
+}
+
+.popup-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+.text-t {
+    text-align: right;
+    font-size: medium;
+}
+.inputbox {
+    position: relative;
+    margin: 40px 0;
+}
+
+.form__input {
+    width: 100%;
+    background: transparent;
+    color: #818181;
+    font-size: 1rem;
+    padding: 0.6em 0.3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #818181;
+}
+
+.form__input:focus + .form__label {
+    transform: translateY(-12px) scale(0.7);
+    transform-origin: left top;
+}
+
+.form__label {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition:
+        transform 0.5s,
+        color 0.3s;
+    pointer-events: none;
+}
+
+.form__submit {
+    width: 100%;
+    border-radius: 10px;
+    height: 30px;
+    border: 1px solid #e18400;
+    background-color: #fff;
+    color: #e18400;
+}
+
+.form__submit:hover {
+    background-color: #e18400;
+    color: #fff;
+    border: none;
+}
+
+.close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buttonLogin {
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 10px;
+    background: #fff;
+    border-color: #e18400;
+}
+
+.buttonLogin:hover {
+    background-color: #e18400;
+    color: #fff;
+    border: 0;
+}
+
+/* Poppup Registro */
+.popup-registro {
+    background-color: rgb(0.38, 0.38, 0.38, 0.5);
+    width: 120%;
+    height: 130%;
+    position: fixed;
+    overflow: none;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.25 rem;
+}
+
+.container-popup-registro {
+    padding: 50px;
+    width: 40%;
+    height: 80%;
+    background-color: lightcyan;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.popup-group-registro {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.inputbox-reg {
+    position: relative;
+    margin: 15px 0;
+}
+
+.form__title {
+    margin-top: 60px;
+}
+
+.form__input {
+    width: 100%;
+    background: transparent;
+    color: #818181;
+    font-size: 1rem;
+    padding: 0.6em 0.3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #818181;
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+    transform: translateY(-12px) scale(0.7);
+    transform-origin: left top;
+}
+
+.form__label {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition:
+        transform 0.5s,
+        color 0.3s;
+}
+
+.form__label_document {
+    position: relative;
+    width: auto;
+    top: 0;
+}
+
+.form__submit {
+    width: 100%;
+    border-radius: 10px;
+    height: 30px;
+    border: 1px solid #e18400;
+    background-color: #fff;
+    color: #e18400;
+}
+
+.form__submit:hover {
+    background-color: #e18400;
+    color: #fff;
+    border: none;
+}
+
+.form__select {
+    width: 50px;
+}
+
+.form__input__document {
+    width: 60%;
+}
+
+.close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.closeReg {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buttonLogin {
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 10px;
+    background: #fff;
+    border-color: #e18400;
+}
+
+.buttonLogin:hover {
+    background-color: #e18400;
+    color: #fff;
+    border: 0;
+}
+.fondo-gris {
+    background-color: rgb(43, 46, 48);
+}
+.rectangulo-fondo {
+    opacity: 0.8;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.Banner {
+    background: linear-gradient(to right, rgb(211, 130, 16), yellow);
+    height: 120px;
+    width: 186vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.rectan {
+    background-color: rgb(173, 216, 230);
+    height: 150px;
+}
+@media (min-width: 770px) {
+    .paralelogramo {
+        transform: skew(-8deg);
+        -moz-transform: skew(-8deg);
+    }
+}
+
+@media (max-width: 769px) {
+    .form__label {
+        font-size: 1rem;
+    }
+
+    .container-popup-registro {
+        width: 80%;
+        display: flex;
+        padding: 40px;
+        height: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paralelogramo {
+        width: 90%;
+    }
+
+    .form__search_mobile {
+        display: flex;
+    }
+
+    .inputbox-reg {
+        position: relative;
+        margin: 20px 0;
+    }
+
+    .form__input:focus + .form__label,
+    .form__input:not(:placeholder-shown) + .form__label {
+        transform: translateY(-10px) scale(0.7);
+        transform-origin: left top;
+    }
+
+    .form__label_document {
+        font-size: 0.8em;
+    }
+
+    .form__select {
+        width: 50px;
+    }
+
+    .form__input__document {
+        width: 52%;
+    }
+
+    .fondo {
+        background-image: url("../images/banner-mobile.png");
+    }
+}
+
+@media (max-width: 466px) {
+    .form__label {
+        font-size: 0.7rem;
+    }
+
+    .container-popup-registro {
+        width: 75%;
+        display: flex;
+        padding: 40px;
+        height: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inputbox-reg {
+        position: relative;
+        margin: 12px 0;
+    }
+
+    .form__input:focus + .form__label,
+    .form__input:not(:placeholder-shown) + .form__label {
+        transform: translateY(-10px) scale(0.7);
+        transform-origin: left top;
+    }
+
+    .form__label_document {
+        font-size: 0.8em;
+    }
+
+    .form__select {
+        width: 50px;
+    }
+
+    .form__input__document {
+        width: 50%;
+    }
+}
+
+.slick-list {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slick-slide {
+    margin: 0 5px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}

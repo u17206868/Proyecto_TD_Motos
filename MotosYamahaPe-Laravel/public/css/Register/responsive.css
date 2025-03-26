@@ -1,0 +1,188 @@
+/* Pantallas extra grandes */
+@media (min-width: 2560px) {
+    body {
+        background-size: cover;
+    }
+
+    .bauto {
+        font-size: 3rem;
+    }
+
+    .form-buttons button {
+        font-size: 1.5rem;
+        padding: 15px 40px;
+    }
+
+    .form-buttons p {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        padding: 40px;
+    }
+
+    .card-header h3 {
+        font-size: 2.5rem;
+    }
+
+    .card-body {
+        padding: 3rem;
+    }
+
+    input,
+    textarea {
+        font-size: 1.2rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1200px) and (max-width: 2559px) {
+    body {
+        background-size: cover;
+    }
+
+    .bauto {
+        font-size: 2.5rem;
+    }
+
+    .form-buttons button {
+        font-size: 1.3rem;
+        padding: 12px 35px;
+    }
+
+    .form-buttons p {
+        font-size: 1.1rem;
+    }
+
+    .card {
+        padding: 30px;
+    }
+
+    .card-header h3 {
+        font-size: 2.2rem;
+    }
+
+    .card-body {
+        padding: 2.5rem;
+    }
+
+    input,
+    textarea {
+        font-size: 1.1rem;
+    }
+}
+
+/* Pantallas medianas */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .bauto {
+        font-size: 2rem;
+    }
+
+    .form-buttons button {
+        font-size: 1.1rem;
+        padding: 10px 30px;
+    }
+
+    .form-buttons p {
+        font-size: 1rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card-header h3 {
+        font-size: 2rem;
+    }
+
+    .card-body {
+        padding: 2rem;
+    }
+
+    input,
+    textarea {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 767px) {
+    body {
+        background-size: contain;
+    }
+
+    .bauto {
+        font-size: 1.8rem;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .form-buttons button {
+        font-size: 1rem;
+        padding: 8px 25px;
+    }
+
+    .form-buttons p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card-header h3 {
+        font-size: 1.8rem;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    input,
+    textarea {
+        font-size: 0.9rem;
+    }
+}
+
+/* Pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .bauto {
+        font-size: 1.5rem;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-buttons button {
+        font-size: 0.9rem;
+        padding: 7px 20px;
+    }
+
+    .form-buttons p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    input,
+    textarea {
+        font-size: 0.85rem;
+    }
+}

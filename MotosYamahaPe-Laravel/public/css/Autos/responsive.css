@@ -1,0 +1,141 @@
+/* Pantallas muy pequeñas (menor a 480px) */
+@media (max-width: 480px) {
+    .carousel-item img {
+        max-height: 300px; /* Reducir altura en pantallas más pequeñas */
+    }
+
+    /* .carousel { */
+        /* height: 300px; Slider compacto */
+    /* } */
+
+    .featured-car-item {
+        flex: 1 1 100%; /* Una tarjeta por fila */
+    }
+
+    .popup-panel {
+        width: 100%; /* El pop-up ocupa todo el ancho */
+    }
+}
+
+/* Pantallas pequeñas (entre 480px y 767px) */
+@media screen and (max-width: 767px) {
+    /* .carousel { */
+        /* height: 400px; Reducir altura */
+    /* } */
+
+    .featured-car .title-wrapper {
+        flex-direction: column; /* Alinear título verticalmente */
+        align-items: center;
+    }
+
+    .featured-car-item {
+        flex: 1 1 calc(50% - 20px); /* Dos tarjetas por fila */
+    }
+
+    .popup-panel {
+        width: 90%; /* Pop-up más ancho */
+        padding: 15px; /* Ajustar el espaciado */
+    }
+
+    #form__radio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filters-column {
+        width: 100%;
+        max-width: 85% !important; /* Barra de filtros ocupa todo el ancho */
+        margin-bottom: 20px; /* Espaciado con el listado */
+    }
+
+    .autos-listing {
+        margin-left: 0; /* Quitar margen lateral */
+    }
+}
+
+/* Pantallas medianas (entre 768px y 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .row {
+        justify-content: center;
+    }
+
+    .col-md-4 {
+        width: 400px;
+    }
+
+    .container {
+        max-width: 720px; /* Contenedor más estrecho */
+    }
+
+    .featured-car-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* Dos columnas */
+    }
+
+    /* .carousel { */
+        /* height: 450px; Altura reducida del slider */
+    /* } */
+}
+
+/* Pantallas grandes (mayor a 992px y menor a 1200px) */
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width: 960px; /* Ajustar el contenedor */
+    }
+
+    .featured-car-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* Tres columnas */
+    }
+
+    .filters-column {
+        max-width: 60%;
+        width: 100%;
+    }
+
+    .d-flex-wrapper {
+        flex-direction: column; /* Cambiar diseño a columna */
+    }
+
+    /* .carousel { */
+        /* margin-bottom: 20px; Añadir espacio entre carrusel y filtros */
+    /* } */
+
+    .container-autos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .autos-listing {
+        margin-left: 0;
+    }
+}
+
+/* Pantallas medianas a grandes (entre 1200px y 2559px) */
+@media (min-width: 1200px) and (max-width: 2559px) {
+    /* .carousel { */
+        /* height: 500px; Ajuste intermedio de altura */
+    /* } */
+
+    .container {
+        max-width: 1170px; /* Ajustar el contenedor */
+    }
+
+    .featured-car-list {
+        grid-template-columns: repeat(4, minmax(0, 1fr)); /* Cuatro columnas */
+    }
+}
+
+/* Pantallas grandes (mayor a 2560px) */
+@media screen and (min-width: 2560px) {
+    /* .carousel { */
+        /* height: 600px; Mayor altura para pantallas grandes */
+    /* } */
+
+    .popup-panel {
+        width: 40%; /* Hacer el pop-up más compacto */
+    }
+
+    #featuredAutosCarousel {
+        margin: 50px 0;
+    }
+}

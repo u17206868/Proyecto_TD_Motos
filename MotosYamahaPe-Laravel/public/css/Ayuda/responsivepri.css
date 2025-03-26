@@ -1,0 +1,127 @@
+/* Pantallas muy pequeñas (menores a 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        padding: 1rem; /* Reducir padding en el contenedor */
+    }
+
+    h1 {
+        font-size: 1.6rem; /* Reducir tamaño del título principal */
+    }
+
+    h5 {
+        font-size: 1rem; /* Reducir tamaño de los subtítulos */
+        margin-top: 1.5rem; /* Reducir espaciado superior */
+    }
+
+    p {
+        font-size: 0.9rem; /* Reducir tamaño del texto */
+        text-align: left; /* Alinear a la izquierda para mejorar legibilidad */
+        line-height: 1.5; /* Espaciado adecuado entre líneas */
+    }
+
+    hr {
+        margin-top: 2rem; /* Reducir espacio en separadores */
+    }
+
+    .text-center small {
+        font-size: 0.8rem; /* Reducir tamaño del footer */
+    }
+}
+
+/* Pantallas pequeñas (entre 576px y 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 1.8rem; /* Ajustar tamaño del título */
+    }
+
+    h5 {
+        font-size: 1.1rem; /* Tamaño más visible para subtítulos */
+    }
+
+    p {
+        font-size: 1rem; /* Tamaño estándar para párrafos */
+        text-align: justify; /* Mantener justificación */
+    }
+
+    hr {
+        margin-top: 3rem; /* Espaciado entre secciones */
+    }
+}
+
+/* Pantallas medianas (entre 768px y 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 2rem; /* Título principal más destacado */
+    }
+
+    h5 {
+        font-size: 1.2rem; /* Subtítulos más grandes */
+    }
+
+    p {
+        font-size: 1.1rem; /* Tamaño más legible para texto */
+    }
+
+    ul {
+        padding-left: 1.5rem; /* Margen izquierdo para listas */
+    }
+
+    hr {
+        margin-top: 4rem; /* Separación más amplia */
+    }
+}
+
+/* Pantallas grandes (entre 992px y 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 2.3rem; /* Destacar el título principal */
+    }
+
+    h5 {
+        font-size: 1.3rem; /* Tamaño prominente para subtítulos */
+    }
+
+    p {
+        font-size: 1.2rem; /* Texto más claro y legible */
+    }
+
+    ul {
+        padding-left: 2rem; /* Ajustar alineación de listas */
+    }
+
+    hr {
+        margin-top: 5rem; /* Espaciado amplio */
+    }
+
+    .text-center small {
+        font-size: 0.85rem; /* Footer más visible */
+    }
+}
+
+/* Pantallas extra grandes (1200px y más) */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2.5rem; /* Título prominente */
+    }
+
+    h5 {
+        font-size: 1.4rem; /* Subtítulos destacados */
+    }
+
+    p {
+        font-size: 1.3rem; /* Texto más grande y claro */
+        line-height: 1.8; /* Mejorar legibilidad */
+    }
+
+    ul {
+        padding-left: 2.5rem; /* Espaciado consistente para listas */
+    }
+
+    hr {
+        margin-top: 6rem; /* Separación amplia para mayor claridad */
+    }
+
+    .text-center small {
+        font-size: 0.9rem; /* Footer proporcional al diseño */
+    }
+}

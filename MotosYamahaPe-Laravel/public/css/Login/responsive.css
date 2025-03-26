@@ -1,0 +1,111 @@
+/* Pantallas pequeñas (Tablets y móviles grandes) */
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%; /* Reducir ancho para pantallas medianas */
+        padding: 1.5rem; /* Ajustar el padding */
+    }
+
+    .card-title {
+        font-size: 1.8rem; /* Reducir el tamaño del título */
+        margin-bottom: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 1.1rem; /* Botón más pequeño */
+        padding: 0.8rem; /* Reducir padding del botón */
+    }
+
+    .form-control {
+        font-size: 1rem; /* Reducir tamaño de los inputs */
+        padding: 0.7rem;
+    }
+
+    p {
+        font-size: 1rem; /* Reducir el tamaño del texto en los enlaces */
+    }
+}
+
+/* Pantallas muy pequeñas (Móviles pequeños) */
+@media (max-width: 480px) {
+    .login-box {
+        width: 95%; /* Más adaptativo para dispositivos muy pequeños */
+        padding: 1rem; /* Reducir padding general */
+    }
+
+    .card-title {
+        font-size: 1.5rem; /* Título más compacto */
+        margin-bottom: 0.8rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem; /* Ajustar tamaño del botón */
+        padding: 0.7rem; /* Reducir padding */
+    }
+
+    .form-control {
+        font-size: 0.9rem; /* Ajustar inputs */
+        padding: 0.6rem;
+    }
+
+    p {
+        font-size: 0.9rem; /* Texto más pequeño */
+    }
+}
+
+/* Pantallas medianas (Laptops pequeñas o pantallas de escritorio pequeñas) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .login-box {
+        width: 70%; /* Ajustar el ancho */
+    }
+
+    .card-title {
+        font-size: 2rem; /* Tamaño ligeramente menor para el título */
+    }
+
+    .btn-primary {
+        font-size: 1.2rem; /* Botón adaptado */
+        padding: 0.8rem;
+    }
+}
+
+/* Pantallas grandes (Desktop y monitores grandes) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .login-box {
+        width: 50%; /* Más espacio para el login */
+    }
+
+    .card-title {
+        font-size: 2.2rem; /* Título grande y visible */
+    }
+
+    .btn-primary {
+        font-size: 1.3rem; /* Ajustar tamaño del botón */
+        padding: 0.9rem;
+    }
+
+    .form-control {
+        font-size: 1.1rem; /* Inputs más grandes */
+        padding: 0.8rem;
+    }
+}
+
+/* Pantallas extra grandes (Monitores 4K o mayores) */
+@media (min-width: 1441px) {
+    .login-box {
+        width: 40%; /* Más pequeño relativo al espacio */
+    }
+
+    .card-title {
+        font-size: 2.4rem; /* Título prominente */
+    }
+
+    .btn-primary {
+        font-size: 1.4rem; /* Botón más grande */
+        padding: 1rem;
+    }
+
+    .form-control {
+        font-size: 1.2rem; /* Inputs más destacados */
+        padding: 0.9rem;
+    }
+}

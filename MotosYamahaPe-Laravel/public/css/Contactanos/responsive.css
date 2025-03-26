@@ -1,0 +1,108 @@
+/* Para pantallas extra grandes */
+@media (min-width: 2560px) {
+
+    .contact-form {
+        padding: 40px;
+        max-width: 800px;
+    }
+
+    .contact-form h1 {
+        font-size: 3rem;
+    }
+
+    .form-control, .form-select {
+        font-size: 1.2rem;
+    }
+
+    .submit-btn button {
+        font-size: 1.3rem;
+        padding: 15px 40px;
+    }
+}
+
+/* Para pantallas grandes */
+@media (min-width: 1200px) and (max-width: 2559px) {
+
+    .contact-form {
+        padding: 35px;
+        max-width: 700px;
+    }
+
+    .contact-form h1 {
+        font-size: 2.8rem;
+    }
+
+    .form-control, .form-select {
+        font-size: 1.1rem;
+    }
+
+    .submit-btn button {
+        font-size: 1.2rem;
+        padding: 14px 35px;
+    }
+}
+
+/* Para pantallas medianas */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .contact-form {
+        padding: 30px;
+        max-width: 600px;
+    }
+
+    .contact-form h1 {
+        font-size: 2.5rem;
+    }
+
+    .form-control, .form-select {
+        font-size: 1rem;
+    }
+
+    .submit-btn button {
+        font-size: 1.1rem;
+        padding: 12px 30px;
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 767px) {
+
+    .contact-form {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .contact-form h1 {
+        font-size: 2rem;
+    }
+
+    .form-control, .form-select {
+        font-size: 0.9rem;
+    }
+
+    .submit-btn button {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}
+
+/* Para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .contact-form h1 {
+        font-size: 1.8rem;
+    }
+
+    .form-control, .form-select {
+        font-size: 0.85rem;
+    }
+
+    .submit-btn button {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    } 
+}

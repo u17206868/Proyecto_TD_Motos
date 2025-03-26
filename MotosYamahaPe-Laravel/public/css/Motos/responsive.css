@@ -1,0 +1,112 @@
+/* Media Queries para la página de Motos */
+
+/* Ajuste para pantallas extra grandes */
+@media (min-width: 2560px) {
+    .carousel-inner img {
+        height: 500px;
+    }
+}
+
+/* Ajuste para pantallas grandes */
+@media (min-width: 1200px) and (max-width: 2559px) {
+    .carousel-inner img {
+        height: 450px;
+    }
+}
+
+/* Ajustes para pantallas medianas */
+@media screen and (max-width: 1199px) {
+    .carousel-inner img {
+        height: 400px;
+    }
+
+    .container-motos {
+        align-items: center;
+        flex-direction: column; /* Cambia el diseño a columna */
+    }
+
+    .filters-column {
+        max-width: 100%;
+        width: 80%;
+    }
+
+    .motos-listing .row {
+        /* gap: 15px; Añadir espacio entre filas */
+        flex-wrap: wrap;
+    }
+
+    .motos-listing .card {
+        flex: 1 1 calc(33.33% - 15px); /* Tres columnas por fila */
+        margin: 0 auto;
+    }
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 767px) {
+    .d-flex-wrapper {
+        flex-direction: column; /* Cambia el diseño a columna */
+        align-items: center; /* Centra el filtro */
+        gap: 15px;
+    }
+
+    .filters-column {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .motos-listing .row {
+        display: flex;
+        flex-wrap: wrap; /* Evita que las imágenes se sobrepongan */
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .motos-listing .card {
+        flex: 1 1 calc(50% - 15px); /* Dos columnas por fila */
+        margin: 0 auto;
+    }
+
+    .motos-listing img {
+        width: 100%; /* Ajusta las imágenes al ancho disponible */
+        height: auto;
+    }
+
+    .carousel-inner img {
+        height: 300px; /* Ajusta la altura para pantallas pequeñas */
+    }
+}
+
+/* Diseño para pantallas muy pequeñas */
+@media screen and (min-width: 480px) {
+
+    .row {
+        justify-content: center;
+    }
+
+    .col-md-4 {
+        width: 400px;
+    }
+
+    .carousel-inner img {
+        height: 250px;
+    }
+
+    .filters-column form {
+        padding: 10px; /* Reduce el padding en filtros */
+    }
+
+    .popup-panel {
+        width: 90%; /* Reduce el tamaño del popup */
+        padding: 15px;
+    }
+
+    .popup-panel img {
+        max-height: 200px; /* Reduce la altura máxima de las imágenes en el popup */
+    }
+
+    .motos-listing .card {
+        flex: 1 1 100%; /* Una columna por fila */
+        margin: 0 auto;
+    }
+}
+

@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* CSS Document */
+@font-face {
+    font-family: 'ubuntu';
+    src: url("/fonts/ubuntu/ubuntu-regular-webfont.woff") format("woff"),
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src: url("/fonts/ubuntu/ubuntu-bold-webfont.woff") format("woff"),
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'calibri';
+    src: url('/fonts/calibri/calibri.woff') format('woff'),
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'calibriBI';
+    src: url('/fonts/calibri/calibriBI.woff') format('woff'),
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'swissbt';
+    src: url('/fonts/swissbt.woff') format('woff'),
+    font-style: normal;
+    font-weight: normal;
+}

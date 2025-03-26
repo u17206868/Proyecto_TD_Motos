@@ -1,0 +1,28 @@
+services:
+  db:
+    image: mysql:latest
+    environment:
+        MYSQL_ROOT_PASSWORD: root # Debe concordar con las credenciales de /*.env
+        MYSQL_DATABASE: laravel # Debe concordar con las credenciales de /*.env
+    ports:
+      - "3307:3306"
+    networks:
+      - app-network
+    volumes:
+      - db_data:/var/lib/mysql
+
+  tuautope:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  db_data:

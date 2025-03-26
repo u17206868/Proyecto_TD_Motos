@@ -1,0 +1,327 @@
+/* Estilos para el slider */
+.custom-carousel {
+    max-width: 85%;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding-top: 15px; /* Espaciado superior para separar el carrusel del borde */
+    background-color: white; /* Fondo blanco para el espaciado */
+}
+
+.carousel-inner {
+    border-radius: 15px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Mantener proporciones */
+    max-height: 400px; /* Limitar altura máxima */
+    object-fit: contain; /* Evitar recorte de la imagen */
+    border-radius: 15px;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10px; /* Posicionar en la parte inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    max-width: 50%;
+    text-align: center;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.carousel-caption .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #0056b3;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #007bff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+/* Estilos para el pop-up */
+.popup-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1050;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 50%;
+    padding: 20px;
+    display: none;
+    animation-name: slideInPopup;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+}
+
+.popup-panel img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    max-width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1049;
+    display: none;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a,
+.pagination span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #007bff;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination .active span {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination .disabled span {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination .page-item:first-child .page-link::before {
+    content: "«";
+    font-size: 18px;
+}
+
+.pagination .page-item:last-child .page-link::after {
+    content: "»";
+    font-size: 18px;
+}
+
+/* Corrección para layout del filtro y lista */
+.d-flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    /* Espaciado entre filtros y listado */
+}
+
+.filters-column {
+    flex: 0 0 300px;
+    max-width: 300px;
+    margin-bottom: 20px;
+    background-color: #f8f9fa; /* Color más suave y armonioso con la lista de autos */
+    border: 1px solid #007bff; /* Bordes en azul */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.filters-column h5 {
+    color: #0056b3; /* Azul más oscuro para mejor contraste */
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #007bff; /* Línea azul debajo para mejor presentación */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.filters-column label {
+    font-weight: bold;
+    color: #333;
+}
+
+.filters-column .form-select {
+    border: 1px solid #007bff;
+    border-radius: 5px;
+}
+
+.filters-column .btn-success {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.filters-column .btn-success:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.filters-column .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.filters-column .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.filters-column .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.filters-column .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.autos-listing {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.auto-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+.auto-card:hover {
+    transform: scale(1.05);
+}
+
+.auto-card img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.auto-card .card-body {
+    padding: 15px;
+}
+
+.auto-card .btn {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.car-contain {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+.autos-listing img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition:
+        transform 0.4s,
+        opacity 0.5s;
+
+    &:hover {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+.carousel-item img {
+    margin: 0 20px;
+}
+
+#featuredAutosCarousel > * {
+    transition: all 0.5s;
+}
+.title-container {
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInPopup {
+    0% {
+        transform: translate(-50%, -60%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-50%, -50%);
+        opacity: 1;
+    }
+}

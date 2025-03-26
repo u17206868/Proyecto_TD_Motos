@@ -1,0 +1,155 @@
+/* Slider */
+.carousel-inner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Popup */
+.popup-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1050;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 50%;
+    padding: 20px;
+    display: none;
+    animation-name: slideInPopup;
+    animation-timing-function: linear;
+    animation-duration: .2s;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1049;
+    display: none;
+    animation-name: toTrasparent;
+    animation-timing-function: linear;
+    animation-duration: .2s;
+}
+
+.popup-panel img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100%;
+    max-width: 400px;
+    /* Ajustar tamaño máximo */
+    height: 300px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.popup-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Filtro */
+.filters-column {
+    flex: 0 0 300px;
+    max-width: 300px;
+}
+
+.filters-column form {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.filters-column h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.filters-column .form-label {
+    font-weight: bold;
+}
+
+/* Listado de motos */
+.motos-listing img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.motos-listing .card {
+    flex: 1 1 calc(33.33% - 20px); /* Tres columnas por fila */
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.motos-listing .card-body {
+    text-align: center;
+}
+
+.d-flex-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.moto-contain {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+.moto-contain > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform .4s, opacity .5s;
+
+    &:hover {
+      transform: scale(1.175);
+    }
+}
+
+.title-container {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+  }
+
+  @keyframes toTrasparent {
+    from {
+        background-color: #0000;
+    } to {
+        background-color: #00000080;
+    }
+  }
+
+  @keyframes slideInPopup {
+    0% {
+      transform: translate(-50%, -60%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-50%, -50%);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
